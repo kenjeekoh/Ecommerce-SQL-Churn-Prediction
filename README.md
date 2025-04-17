@@ -1,17 +1,17 @@
 
-# 🛍️ E-Commerce Sales Analytics Dashboard
+# Ecommerce-SQL-Churn-Prediction
 
 A full-stack SQL and machine learning project that simulates a real-world e-commerce data pipeline. From relational database design and advanced SQL analytics to customer churn prediction using Python, this project showcases end-to-end data-driven decision making.
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 This project analyzes synthetic e-commerce transactional data and uses SQL and Python to answer key business questions. It also builds a churn prediction model based on customer behavior and purchasing patterns.
 
 ---
 
-## 🧱 Database Schema
+## Database Schema
 
 The database is modeled using standard relational principles and contains five normalized tables:
 
@@ -25,7 +25,7 @@ SQL table creation and data loading are defined in `sql/create_all.sql`.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 E-Commerce-Sales-Analytics-Dashboard/
@@ -47,7 +47,7 @@ E-Commerce-Sales-Analytics-Dashboard/
 
 ---
 
-## 🔍 SQL Analysis Highlights
+## SQL Analysis Highlights
 
 All analytical queries are found in `sql/analytical_queries.sql`. Key questions answered:
 
@@ -61,7 +61,7 @@ These queries utilize complex `JOIN`s, `GROUP BY`, subqueries, and aggregations 
 
 ---
 
-## 🔮 Customer Churn Prediction (ML)
+## Customer Churn Prediction (ML)
 
 Built using `RandomForestClassifier`, the churn model predicts customer dropout based on:
 
@@ -69,7 +69,7 @@ Built using `RandomForestClassifier`, the churn model predicts customer dropout 
 - `total_orders`
 - `total_spent`
 
-### 🧪 ML Workflow (`ml/churn_prediction.py`)
+### ML Workflow (`ml/churn_prediction.py`)
 - Load SQL-exported features (`churn_features.csv`)
 - Define churn: `days_since_last_order > 90`
 - Split into train/test, train a model, evaluate with confusion matrix
@@ -78,7 +78,7 @@ Built using `RandomForestClassifier`, the churn model predicts customer dropout 
 
 ---
 
-## 📊 Results Sample
+## Results Sample
 
 **Confusion Matrix:**
 
@@ -108,7 +108,7 @@ Predicted
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Deploy model as a Flask API or Streamlit dashboard
 - Add clustering to segment users further
@@ -117,7 +117,7 @@ Predicted
 
 ---
 
-## 🙌 Acknowledgments
+## Acknowledgments
 
 Built by [Christiaan Kenjee Koh](https://www.linkedin.com/in/kenjeekoh/), MSBA student @ UC Irvine.
 This project was inspired by real-world data workflows in sales analytics and customer lifecycle optimization.
