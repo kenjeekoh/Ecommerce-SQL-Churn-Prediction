@@ -83,7 +83,7 @@ Built using `RandomForestClassifier`, the churn model predicts customer dropout 
 **Confusion Matrix:**
 
 Perfect model performance on test set  
-(✔️ indicates class balance and strong signal in data):
+Model achieved perfect performance on the test set, suggesting strong signal in the features — though this may also indicate potential overfitting due to data simplicity or class separation.
 
 ```
 Predicted
